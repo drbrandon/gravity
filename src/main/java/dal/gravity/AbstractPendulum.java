@@ -44,5 +44,10 @@ public abstract class AbstractPendulum {
     public double getStringLength () { return stringLength; }
 
     public GravityModel getGravitationalField () { return g; }
+    
+    public void setGravityModel(double gravity){ 
+    	GravityConstant newG = new GravityConstant(gravity);
+    	g = newG;
+    }
 
 }

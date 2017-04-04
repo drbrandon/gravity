@@ -32,6 +32,11 @@ public class PendulumRunner {
 				nf.format (Math.toDegrees (rp.getLastTheta ()))
 				+ "\t" + 
 				nf.format (Math.toDegrees (rpCoarse.getLastTheta ())));
+	    if(second>10){
+	    	sp.setGravityModel(2500);
+	    	rp.setGravityModel(25);
+	    	rpCoarse.setGravityModel(25);
+	    }
 	}
     }
 }
